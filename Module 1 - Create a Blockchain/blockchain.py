@@ -1,7 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
+import datetime
+import hashlib
+import json
+from flask import Flask, jsonify
 
-This is a temporary script file.
-"""
+# Part 1 - Create a Blockchain
 
+class Blockchain:
+    def __init__(self):
+        self.chain = []
+        #self.create_block(proof = 1, previous_hash='0')
